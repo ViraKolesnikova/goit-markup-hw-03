@@ -19,6 +19,7 @@
   --second-part-of-logo: #000000;
   --phone-mail-in-footer: rgba(255, 255, 255, 0.6);
   --header-border: #ECECEC;
+  --cards-border: #EEEEEE;
 }
 
 body {
@@ -58,7 +59,7 @@ img {
   margin-right: auto;
 }
 
-.header {
+header {
   border-bottom-color: var(--header-border);
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -165,8 +166,7 @@ img {
 }
 
 .oder-button {
-  width: 200px;
-  height: 50px;
+  padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 4px;
@@ -183,7 +183,9 @@ img {
 }
 
 /*Особенности оказания услуг*/
-
+.features {
+  margin-top: -40px;
+}
 .feature-item {
   width: 270px;
 }
@@ -216,24 +218,25 @@ img {
   text-align: center;
 }
 /*Скрытый заголовок*/
- .hidden {
-   margin-bottom: 0;
+.hidden {
+  margin-bottom: 0;
   visibility: hidden;
 }
+
 /*Секция чем мы занимаемся*/
 .images {
   justify-content: space-between;
 }
 
- /*Сотрудники*/
+/*Сотрудники*/
  
 .employees {
   background-color: var(--secondary-background-color);
 }
 
 .cards {
-   justify-content: space-between;
-  }
+  justify-content: space-between;
+}
 
 .employee-card {
   background-color: var(--white-color);
@@ -339,7 +342,7 @@ footer>.container {
 
 .gallery-title {
   padding-left: 24px;
-  margin-top: 20px;
+  padding-top: 20px;
   margin-bottom: 4px;
 
   color: var(--title-color);
@@ -356,4 +359,11 @@ footer>.container {
   color: var(--primery-text-color);
   font-size: 16px;
   line-height: 1.87;
+}
+
+.cards-caption {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-color: var(--cards-border);
 }
